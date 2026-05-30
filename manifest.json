@@ -1,0 +1,48 @@
+{
+    "manifest_version": 3,
+    "name": "Whyyy Everywhere",
+    "short_name": "Whyyy Everywhere",
+    "version": "1.0.0",
+    "version_name": "1.0.0 - Initial Release",
+    "description": "Whyyy Everywhere adalah ekstensi browser untuk mengganti seluruh gambar di website apa pun dengan gambar pejabat terwhyyy Indonesia.",
+    "incognito": "spanning",
+    "author": "Wafa Rfqi Anafin",
+    "homepage_url": "https://github.com/wafarifki/Whyyy-Everywhere",
+    "icons": {
+        "16": "images/icons/icon-16.png",
+        "32": "images/icons/icon-32.png",
+        "48": "images/icons/icon-48.png",
+        "128": "images/icons/icon-128.png",
+        "256": "images/icons/icon-256.png",
+        "512": "images/icons/icon-512.png"
+    },
+    "action": {
+        "default_title": "Whyyy Everywhere",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icons/icon-16.png",
+            "32": "images/icons/icon-32.png",
+            "48": "images/icons/icon-48.png",
+            "128": "images/icons/icon-128.png",
+            "256": "images/icons/icon-256.png",
+            "512": "images/icons/icon-512.png"
+        }
+    },
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_start",
+            "all_frames": true,
+            "match_about_blank": true
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["images/replacements/*"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}

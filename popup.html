@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Whyyy Everywhere</title>
+        <meta name="description" content="Whyyy Everywhere adalah ekstensi browser untuk mengganti seluruh gambar di website apa pun dengan gambar pejabat terwhyyy Indonesia." />
+        <meta name="author" content="Wafa Rifqi Anafin" />
+        <meta name="author-link" content="https://wafarifki.com" />
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <main class="popup-shell">
+            <section class="hero">
+                <div class="logo-mark" aria-hidden="true">
+                    <img src="images/icons/icon-512.png" alt="Whyyy Everywhere Logo" />
+                </div>
+                <div class="hero-copy">
+                    <p class="titlewhyy">Whyyy<br />Everywhere</p>
+                </div>
+                <label class="switch" title="On / Off fitur">
+                    <input id="powerToggle" type="checkbox" aria-label="Aktifkan atau matikan fitur" />
+                    <span class="switch-track"><span class="switch-thumb"></span></span>
+                </label>
+            </section>
+            <section class="status-card" aria-live="polite">
+                <span id="statusDot" class="status-dot"></span>
+                <div>
+                    <strong id="stateLabel">OFF</strong>
+                    <small id="modeLabel">Pilih gambar untuk mulai.</small>
+                </div>
+            </section>
+            <section class="choices" aria-label="Pilihan gambar">
+                <button class="choice-card" data-choice="prabowo" type="button">
+                    <img src="images/replacements/prabowo.png" alt="Prabowo" />
+                    <span>Prabowo Gemoy</span>
+                </button>
+                <button class="choice-card" data-choice="jokowi" type="button">
+                    <img src="images/replacements/jokowi.jpg" alt="Jokowi" />
+                    <span>Jokowi Tydack Santai</span>
+                </button>
+                <button class="choice-card" data-choice="megawati" type="button">
+                    <img src="images/replacements/megawati.jpg" alt="Megawati" />
+                    <span>Megawati Muacchhh</span>
+                </button>
+                <button class="choice-card" data-choice="soeharto" type="button">
+                    <img src="images/replacements/soeharto.jpg" alt="Soeharto" />
+                    <span>Soeharto Ngudud</span>
+                </button>
+            </section>
+            <button id="allButton" class="all-card" type="button">
+                <span class="all-icon" aria-hidden="true">✔</span>
+                <span>
+                    <strong>Hidupkan Semua</strong>
+                    <small>Rotasi Prabowo, Jokowi, Megawati, Soeharto</small>
+                </span>
+            </button>
+            <p class="hint">
+                Created By: <a href="https://wafarifki.com" style="color: #4361ee" target="_blank">Wafa Rifqi Anafin</a>
+            </p>
+        </main>
+        <script src="popup.js"></script>
+    </body>
+</html>
