@@ -1,5 +1,9 @@
 # Whyyy Everywhere
 
+<p align="center" style="display: flex; align-items: center; justify-content: center; gap: 10px;vertical-align :middle">
+  <img src="https://github.com/wafarifki/Whyyy-Everywhere/blob/main/images/icons/icon-256.png" alt="Whyyy Everywhere" />
+</p>
+
 **Whyyy Everywhere** adalah ekstensi browser untuk mengganti seluruh gambar di website apa pun dengan gambar pejabat terwhyyy Indonesia.
 
 Internet terlalu normal? Aktifkan **Whyyy Everywhere**, lalu biarkan semua gambar di website berubah menjadi versi yang lebih tidak terduga, lebih absurd, dan jauh lebih **WHYYY**.
@@ -54,6 +58,15 @@ Ada dua cara untuk menggunakan project ini.
 2. Klik tombol **Code**.
 3. Pilih **Download ZIP**.
 4. Extract file ZIP yang sudah didownload ke folder baru klean
+
+### 2. Download dari halaman release Github
+
+1. Buka halaman release di project ini / buka link dibawah
+```text
+https://github.com/wafarifki/Whyyy-Everywhere/releases
+```
+2. Pastikan download versi terbaru jika ada, lalu klik **Source code (zip)**
+3. Extract file ZIP yang sudah didownload ke folder baru klean
 
 ## Cara Install di Google Chrome
 
